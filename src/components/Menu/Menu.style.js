@@ -16,6 +16,7 @@ export const Logo = styled.img`
 export const BoxUl = styled.ul`
   display: flex;
   gap: 2rem;
+  margin-bottom: 0;
 `;
 
 export const BoxLink = styled.li`
@@ -38,6 +39,8 @@ export const Form = styled.form`
   background: rgba(161, 161, 161, 0.452);
   padding: 0 0.5rem;
   border-radius: 2px;
+  height: 30px;
+
 `;
 
 export const Submit = styled.button`
@@ -45,7 +48,7 @@ export const Submit = styled.button`
   border: none;
   cursor: pointer;
   img {
-    height: 1.3rem;
+    height: 1.5rem;
   }
 `;
 
@@ -53,7 +56,6 @@ export const Input = styled.input`
   background: transparent;
   border: none;
   color: white;
-  height: 30px;
   &::placeholder {
     text-transform: capitalize;
     font-size: 1.5rem;

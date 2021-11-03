@@ -19,10 +19,8 @@ const Menu = () => {
       <Styled.Logo src={srcLogo} alt="Logo" />
       <Styled.BoxUl>
         {Links.map(({ content, link }, idx) => (
-          <Styled.BoxLink>
-            <Styled.Link key={idx} href={link}>
-              {content}
-            </Styled.Link>
+          <Styled.BoxLink key={idx}>
+            <Styled.Link href={link}>{content}</Styled.Link>
           </Styled.BoxLink>
         ))}
       </Styled.BoxUl>
@@ -34,7 +32,7 @@ const Menu = () => {
       </Styled.Form>
       <Styled.BoxButtons>
         {ButtonsLinks.map(({ content, type, Icon }, idx) => (
-          <Button type={type}>
+          <Button type={type} key={idx}>
             {Icon && <img src={Icon} alt="Live" />}
             {content}
           </Button>
