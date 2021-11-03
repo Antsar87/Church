@@ -1,5 +1,5 @@
 import Slider from 'react-slick';
-import React, { Fragment } from 'react';
+import React from 'react';
 
 //Importing Icon
 import Watch from '../../images/Icon/Icon_Header/HORLOGE.png';

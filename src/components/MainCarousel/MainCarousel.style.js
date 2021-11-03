@@ -64,6 +64,8 @@ export const NextArrow = styled.div`
     background: red;
   }
 
+  
+
   &::before {
     display: none;
   }
