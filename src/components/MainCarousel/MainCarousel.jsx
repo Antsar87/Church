@@ -1,6 +1,9 @@
 import Slider from 'react-slick';
 import React from 'react';
 
+//Component
+import { Button } from '../../utility/Button/Button';
+
 //Importing Icon
 import Watch from '../../images/Icon/Icon_Header/HORLOGE.png';
 
@@ -58,6 +61,9 @@ const MainCarousel = (props) => {
           )
         )}
       </Slider>
+      <Button style={{ alignSelf: 'flex-end' }} type="secondary-DarkBlue">
+        voir plus
+      </Button>
     </Styled.Box>
   );
 };

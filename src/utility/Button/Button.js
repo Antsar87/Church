@@ -38,4 +38,20 @@ export const Button = styled.a`
       background: ${(props) => props.theme.yellow};
       padding: 5px 30px;
     `}
+
+    ${(props) =>
+    props.type === 'secondary-DarkBlue' &&
+    css`
+      color: ${(props) => props.theme.white};
+      background: ${(props) => props.theme.blueDark};
+      border-radius: 30px;
+    `}
+
+    ${(props) =>
+    props.type === 'secondary-DarkPink' &&
+    css`
+      color: ${(props) => props.theme.white};
+      background: ${(props) => props.theme.pinkDark};
+      border-radius: 30px;
+    `}
 `;

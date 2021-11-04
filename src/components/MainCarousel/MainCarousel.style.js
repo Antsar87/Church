@@ -1,17 +1,37 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-
-.slick-dots {
-  width: 20rem;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  height: 100%;
 
-  li {
-    margin: 0 0;
+  .slick-dots {
+    width: 15rem;
+    height: 1.8rem;
+    top: 107%;
+
+    li {
+      margin: 0 0;
+      opacity: 0.5;
+    }
+
+    button {
+      background: ${(props) => props.theme.blueDark};
+      border-radius: 50%;
+      width: 1rem;
+      height: 1rem;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .slick-active {
+      opacity: 1 !important;
+    }
   }
-}
-
-
 `;
 
 export const BoxImg = styled.div`
@@ -34,6 +54,7 @@ export const BoxText = styled.div`
 
   .content {
     font-weight: 700;
+    font-size: 1.6rem;
   }
 `;
 
@@ -55,16 +76,14 @@ export const BoxFlex = styled.div`
 
 export const NextArrow = styled.div`
   bottom: 0;
-  top: 389px;
-  right: 600px;
+  top: 110%;
+  left: 130px;
   z-index: 10;
 
   .slick-next {
     bottom: 0;
     background: red;
   }
-
-  
 
   &::before {
     display: none;
@@ -73,8 +92,9 @@ export const NextArrow = styled.div`
 
 export const PrevArrow = styled.div`
   bottom: 0;
-  top: 389px;
-  left: 20px;
+  left: -2px;
+  top: 110%;
+
   z-index: 10;
 
   &::before {

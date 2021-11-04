@@ -5,6 +5,8 @@ import Carousel3 from '../../images/img/Carousel_Main_3.png';
 
 import Profile from '../../images/img/Profile.png';
 
+import announce from '../../images/img/announce.png';
+
 ///Information Carousel Card
 
 export const Carousel_Information = [
@@ -57,3 +59,11 @@ export const Carousel_Information = [
     date: '26 Octubre 2021',
   },
 ];
+
+//Exporting Titles
+export const TitlePredication = 'Prédication';
+
+export const TitleAnnonce = "Annonce"
+
+//export img
+export const img = announce;
