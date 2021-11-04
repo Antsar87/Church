@@ -54,4 +54,13 @@ export const Button = styled.a`
       background: ${(props) => props.theme.pinkDark};
       border-radius: 30px;
     `}
+
+    ${(props) =>
+    props.type === 'green' &&
+    css`
+      color: ${(props) => props.theme.white};
+      background: ${(props) => props.theme.greenDark};
+      border-radius: 30px;
+    `}
+
 `;

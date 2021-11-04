@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Box = styled.div`
   display: flex;
@@ -23,6 +23,12 @@ export const Box = styled.div`
       width: 1rem;
       height: 1rem;
 
+      ${(props) =>
+        props.type === 'green' &&
+        css`
+          background: ${(props) => props.theme.greenDark};
+        `}
+
       &::before {
         display: none;
       }
@@ -34,18 +40,11 @@ export const Box = styled.div`
   }
 `;
 
-
-
 export const NextArrow = styled.div`
   bottom: 0;
   top: 110%;
   left: 130px;
   z-index: 10;
-
-  .slick-next {
-    bottom: 0;
-    background: red;
-  }
 
   &::before {
     display: none;

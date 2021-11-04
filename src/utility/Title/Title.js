@@ -12,7 +12,7 @@ const Title = styled.h2`
     position: absolute;
     bottom: 5px;
     margin-left: 10px;
-    width: 30rem;
+    width: 50rem;
     border: 1px solid ${(props) => props.paint};
   }
 `;

@@ -24,7 +24,7 @@ const Main = () => {
           {TitlePredication}
         </Title>
         <Styled.PrecationBox>
-          <MainCarousel slidesToShow={3} slidesToScroll={2}>
+          <MainCarousel slidesToShow={3} slidesToScroll={2} paint="secondary-DarkBlue">
             {Carousel_Information.map(
               ({ Img, type, text, ImgProfile, name, date }, idx) => (
                 <div className="box" key={idx}>

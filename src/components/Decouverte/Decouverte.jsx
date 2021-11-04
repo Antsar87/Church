@@ -16,7 +16,7 @@ const Decouverte = () => {
       <Title paint={(props) => props.theme.greenDark}>découverte</Title>
 
       <Styled.Flex>
-        <MainCarousel slidesToShow={5} slidesToScroll={1}>
+        <MainCarousel slidesToShow={5} slidesToScroll={1} paint="green">
           {Information.map((item, idx) => (
             <Styled.Box key={idx}>
               <img src={item.img} alt="Content" />
