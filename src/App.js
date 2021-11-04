@@ -3,6 +3,7 @@ import Menu from './components/Menu/Menu';
 import Main from './components/Main/Main';
 import Section from './components/Section/Section';
 import Enseignement from './components/Enseignement/Enseignement.jsx';
+import Decouverte from './components/Decouverte/Decouverte';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Section />
         <Main />
         <Enseignement />
+        <Decouverte />
       </div>
     </>
   );

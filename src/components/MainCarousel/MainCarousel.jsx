@@ -5,7 +5,6 @@ import React from 'react';
 import { Button } from '../../utility/Button/Button';
 
 //Importing Icon
-import Watch from '../../images/Icon/Icon_Header/HORLOGE.png';
 
 //Importing Arrows
 import ArrowLeft from '../../images/Arrows/ArrowLeftMain.png';
@@ -14,13 +13,13 @@ import ArrowRight from '../../images/Arrows/ArrowRightMain.png';
 //Style
 import * as Styled from './MainCarousel.style';
 
-const MainCarousel = (props) => {
+const MainCarousel = ({ slidesToShow, slidesToScroll, children }) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow,
+    slidesToScroll,
     nextArrow: (
       <Styled.NextArrow>
         <img src={ArrowRight} alt="Arrow" />
@@ -34,33 +33,7 @@ const MainCarousel = (props) => {
   };
   return (
     <Styled.Box>
-      <Slider {...settings}>
-        {props.CarouselInformation.map(
-          ({ Img, type, text, ImgProfile, name, date }, idx) => (
-            <div className="box" key={idx}>
-              <Styled.BoxImg>
-                <img src={Img} alt="Predication" />
-              </Styled.BoxImg>
-
-              <Styled.BoxText>
-                <h3 className="type">{type}</h3>
-                <h2 className="content">{text}</h2>
-              </Styled.BoxText>
-
-              <Styled.BoxProfile>
-                <Styled.BoxFlex>
-                  <img src={ImgProfile} alt="profile" />
-                  <p>{name}</p>
-                </Styled.BoxFlex>
-                <Styled.BoxFlex>
-                  <img src={Watch} alt="time" />
-                  <p>{date}</p>
-                </Styled.BoxFlex>
-              </Styled.BoxProfile>
-            </div>
-          )
-        )}
-      </Slider>
+      <Slider {...settings}>{children}</Slider>
       <Button style={{ alignSelf: 'flex-end' }} type="secondary-DarkBlue">
         voir plus
       </Button>
