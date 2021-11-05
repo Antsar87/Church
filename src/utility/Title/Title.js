@@ -9,6 +9,7 @@ const Title = styled.h2`
 
   &::after {
     content: '';
+    display: ${(props) => (props.VoF === 'out' ? 'none' : 'inline')};
     position: absolute;
     bottom: 5px;
     margin-left: 10px;

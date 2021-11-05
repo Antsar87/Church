@@ -4,6 +4,7 @@ import Main from './components/Main/Main';
 import Section from './components/Section/Section';
 import Enseignement from './components/Enseignement/Enseignement.jsx';
 import Decouverte from './components/Decouverte/Decouverte';
+import Videos from './components/Videos/Videos';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Main />
         <Enseignement />
         <Decouverte />
+        <Videos />
       </div>
     </>
   );

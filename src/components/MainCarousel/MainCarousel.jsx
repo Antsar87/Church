@@ -12,7 +12,10 @@ import ArrowRight from '../../images/Arrows/ArrowRightMain.png';
 //Green
 import ArrowRightGreen from '../../images/Arrows/ArrowRightGreen.png';
 import ArrowLeftGreen from '../../images/Arrows/ArrowLeftGreen.png';
+//Yellow
 
+import ArrowRightYellow from '../../images/Arrows/ArrowRightYellow.png';
+import ArrowLeftYellow from '../../images/Arrows/ArrowLeftYellow.png';
 //Style
 import * as Styled from './MainCarousel.style';
 
@@ -27,6 +30,8 @@ const MainCarousel = ({ slidesToShow, slidesToScroll, children, paint }) => {
       <Styled.NextArrow>
         {paint === 'green' ? (
           <img src={ArrowRightGreen} alt="Arrow" />
+        ) : paint === 'yellow' ? (
+          <img src={ArrowRightYellow} alt="Arrow" />
         ) : (
           <img src={ArrowRight} alt="Arrow" />
         )}
@@ -36,6 +41,8 @@ const MainCarousel = ({ slidesToShow, slidesToScroll, children, paint }) => {
       <Styled.PrevArrow>
         {paint === 'green' ? (
           <img src={ArrowLeftGreen} alt="Arrow" />
+        ) : paint === 'yellow' ? (
+          <img src={ArrowLeftYellow} alt="Arrow" />
         ) : (
           <img src={ArrowLeft} alt="Arrow" />
         )}
@@ -45,7 +52,10 @@ const MainCarousel = ({ slidesToShow, slidesToScroll, children, paint }) => {
   return (
     <Styled.Box type={paint}>
       <Slider {...settings}>{children}</Slider>
-      <Button style={{ alignSelf: 'flex-end' }} type={paint}>
+      <Button
+        style={{ position: 'absolute', right: 0, bottom: '0' }}
+        type={paint}
+      >
         voir plus
       </Button>
     </Styled.Box>

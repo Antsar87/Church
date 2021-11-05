@@ -14,9 +14,8 @@ export const Precation = styled.div`
 
 export const PrecationBox = styled.div`
   border-radius: 10px;
-  height: 100%;
   background: ${(props) => props.theme.white};
-  padding: 1rem 2rem 0 2rem;
+  padding: 1rem 2rem 2rem 2rem;
 `;
 
 export const Annonce = styled.div`

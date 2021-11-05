@@ -1,16 +1,26 @@
 import styled, { css } from 'styled-components';
 
 export const Box = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 0.5rem;
+  position: relative;
   height: 100%;
 
+  .slick-slider {
+    display: grid;
+    row-gap: 1.5rem;
+    grid-template-areas:
+      'head head head head'
+      'prev cente next .';
+
+    .slick-list {
+      grid-area: head;
+    }
+  }
+
   .slick-dots {
-    width: 15rem;
-    height: 1.8rem;
-    top: 107%;
+    text-align: initial;
+    display: inline;
+    position: initial;
+    grid-area: cente;
 
     li {
       margin: 0 0;
@@ -29,6 +39,12 @@ export const Box = styled.div`
           background: ${(props) => props.theme.greenDark};
         `}
 
+      ${(props) =>
+        props.type === 'yellow' &&
+        css`
+          background: ${(props) => props.theme.white};
+        `}
+
       &::before {
         display: none;
       }
@@ -41,10 +57,11 @@ export const Box = styled.div`
 `;
 
 export const NextArrow = styled.div`
-  bottom: 0;
-  top: 110%;
-  left: 130px;
+  position: initial;
   z-index: 10;
+  display: inline !important;
+  grid-area: next;
+  transform: initial;
 
   &::before {
     display: none;
@@ -52,12 +69,11 @@ export const NextArrow = styled.div`
 `;
 
 export const PrevArrow = styled.div`
-  bottom: 0;
-  left: -2px;
-  top: 110%;
-
   z-index: 10;
-
+  position: initial;
+  display: inline !important;
+  grid-area: prev;
+  transform: initial;
   &::before {
     display: none;
   }

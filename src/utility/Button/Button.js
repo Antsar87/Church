@@ -63,4 +63,11 @@ export const Button = styled.a`
       border-radius: 30px;
     `}
 
+    ${(props) =>
+    props.type === 'yellow' &&
+    css`
+      color: ${(props) => props.theme.white};
+      background: ${(props) => props.theme.yellow};
+      border-radius: 30px;
+    `}
 `;
