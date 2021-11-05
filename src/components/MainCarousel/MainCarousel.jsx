@@ -13,38 +13,55 @@ import ArrowRight from '../../images/Arrows/ArrowRightMain.png';
 import ArrowRightGreen from '../../images/Arrows/ArrowRightGreen.png';
 import ArrowLeftGreen from '../../images/Arrows/ArrowLeftGreen.png';
 //Yellow
-
 import ArrowRightYellow from '../../images/Arrows/ArrowRightYellow.png';
 import ArrowLeftYellow from '../../images/Arrows/ArrowLeftYellow.png';
+
+//Yellow
+import ArrowRightBlueLight from '../../images/Arrows/ArrowRightBlueLight.png';
+import ArrowLeftBlueLight from '../../images/Arrows/ArrowLeftBlueLight.png';
+
 //Style
 import * as Styled from './MainCarousel.style';
 
-const MainCarousel = ({ slidesToShow, slidesToScroll, children, paint }) => {
+const MainCarousel = ({
+  slidesToShow,
+  slidesToScroll,
+  children,
+  paint,
+  rows,
+  slidesPerRow,
+}) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow,
     slidesToScroll,
+    rows: rows || 1,
+    slidesPerRow: slidesPerRow || 1,
     nextArrow: (
       <Styled.NextArrow>
         {paint === 'green' ? (
-          <img src={ArrowRightGreen} alt="Arrow" />
+          <img src={ArrowRightGreen} alt="Next" />
         ) : paint === 'yellow' ? (
-          <img src={ArrowRightYellow} alt="Arrow" />
+          <img src={ArrowRightYellow} alt="Next" />
+        ) : paint === 'blueLight' ? (
+          <img src={ArrowRightBlueLight} alt="Next" />
         ) : (
-          <img src={ArrowRight} alt="Arrow" />
+          <img src={ArrowRight} alt="Next" />
         )}
       </Styled.NextArrow>
     ),
     prevArrow: (
       <Styled.PrevArrow>
         {paint === 'green' ? (
-          <img src={ArrowLeftGreen} alt="Arrow" />
+          <img src={ArrowLeftGreen} alt="Next" />
         ) : paint === 'yellow' ? (
-          <img src={ArrowLeftYellow} alt="Arrow" />
+          <img src={ArrowLeftYellow} alt="Next" />
+        ) : paint === 'blueLight' ? (
+          <img src={ArrowLeftBlueLight} alt="Next" />
         ) : (
-          <img src={ArrowLeft} alt="Arrow" />
+          <img src={ArrowLeft} alt="Next" />
         )}
       </Styled.PrevArrow>
     ),

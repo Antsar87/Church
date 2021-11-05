@@ -5,6 +5,7 @@ import Section from './components/Section/Section';
 import Enseignement from './components/Enseignement/Enseignement.jsx';
 import Decouverte from './components/Decouverte/Decouverte';
 import Videos from './components/Videos/Videos';
+import Temoignages from './components/Temoignages/Temoignages';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Enseignement />
         <Decouverte />
         <Videos />
+        <Temoignages />
       </div>
     </>
   );

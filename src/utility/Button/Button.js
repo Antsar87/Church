@@ -70,4 +70,12 @@ export const Button = styled.a`
       background: ${(props) => props.theme.yellow};
       border-radius: 30px;
     `}
+
+    ${(props) =>
+    props.type === 'blueLight' &&
+    css`
+      color: ${(props) => props.theme.blueLight};
+      background: ${(props) => props.theme.white};
+      border-radius: 30px;
+    `}
 `;

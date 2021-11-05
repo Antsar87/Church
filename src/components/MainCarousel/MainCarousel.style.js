@@ -45,6 +45,12 @@ export const Box = styled.div`
           background: ${(props) => props.theme.white};
         `}
 
+      ${(props) =>
+        props.type === 'blueLight' &&
+        css`
+          background: ${(props) => props.theme.blueLight};
+        `}
+
       &::before {
         display: none;
       }
