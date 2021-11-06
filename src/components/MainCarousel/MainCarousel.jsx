@@ -9,14 +9,16 @@ import { Button } from '../../utility/Button/Button';
 //Importing Arrows
 import ArrowLeft from '../../images/Arrows/ArrowLeftMain.png';
 import ArrowRight from '../../images/Arrows/ArrowRightMain.png';
+
 //Green
 import ArrowRightGreen from '../../images/Arrows/ArrowRightGreen.png';
 import ArrowLeftGreen from '../../images/Arrows/ArrowLeftGreen.png';
+
 //Yellow
 import ArrowRightYellow from '../../images/Arrows/ArrowRightYellow.png';
 import ArrowLeftYellow from '../../images/Arrows/ArrowLeftYellow.png';
 
-//Yellow
+//BlueLight
 import ArrowRightBlueLight from '../../images/Arrows/ArrowRightBlueLight.png';
 import ArrowLeftBlueLight from '../../images/Arrows/ArrowLeftBlueLight.png';
 

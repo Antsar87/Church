@@ -6,6 +6,8 @@ import photo4 from '../../images/img/img4.png';
 
 // Exporting Data
 
+export const title = 'Témoignages';
+
 export const Information = [
   {
     img: photo1,

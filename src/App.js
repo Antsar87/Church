@@ -6,6 +6,9 @@ import Enseignement from './components/Enseignement/Enseignement.jsx';
 import Decouverte from './components/Decouverte/Decouverte';
 import Videos from './components/Videos/Videos';
 import Temoignages from './components/Temoignages/Temoignages';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import CopyRight from './components/CopyRight/CopyRight';
 
 function App() {
   return (
@@ -18,7 +21,10 @@ function App() {
         <Decouverte />
         <Videos />
         <Temoignages />
+        <Contact />
       </div>
+      <Footer />
+      <CopyRight />
     </>
   );
 }

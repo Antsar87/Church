@@ -1,18 +1,17 @@
 import React from 'react';
 
-
 //Componets
 import Title from '../../utility/Title/Title';
 import MainCarousel from '../MainCarousel/MainCarousel';
 
 //Style
 import * as Styled from './Temoignages.styled';
-import { Information } from './TemoignagesData';
+import { Information, title } from './TemoignagesData';
 
 const Temoignages = () => {
   return (
     <Styled.Temoignages>
-      <Title paint={(props) => props.theme.blueLight}>Témoignages</Title>
+      <Title paint={(props) => props.theme.blueLight}>{title}</Title>
       <Styled.Box>
         <MainCarousel
           slidesToShow={1}
@@ -25,7 +24,7 @@ const Temoignages = () => {
             <div key={idx}>
               <Styled.BoxChild>
                 <Styled.BoxImg>
-                  <img src={img} alt={title} />
+                  <img src={img} alt="Temoignages" />
                 </Styled.BoxImg>
                 <Styled.BoxContent>
                   <h3>{title}</h3>

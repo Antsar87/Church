@@ -1,39 +1,27 @@
 import React from 'react';
 import { Button } from '../../utility/Button/Button';
 
+import Recherche from '../../utility/Recherche/Recherche';
+
+//Components
+import Links from '../Links/Links';
+
 //Styles
 import * as Styled from './Menu.style';
 
 //Data
-import {
-  srcLogo,
-  Links,
-  srcIconSearch,
-  inputData,
-  ButtonsLinks,
-} from './MenuData';
+import { srcLogo, ButtonsLinks } from './MenuData';
 
 const Menu = () => {
   return (
     <Styled.Box>
       <Styled.Logo src={srcLogo} alt="Logo" />
-      <Styled.BoxUl>
-        {Links.map(({ content, link }, idx) => (
-          <Styled.BoxLink key={idx}>
-            <Styled.Link href={link}>{content}</Styled.Link>
-          </Styled.BoxLink>
-        ))}
-      </Styled.BoxUl>
-      <Styled.Form>
-        <Styled.Submit>
-          <img src={srcIconSearch} alt="Recherche" />
-        </Styled.Submit>
-        <Styled.Input {...inputData} />
-      </Styled.Form>
+      <Links />
+      <Recherche />
       <Styled.BoxButtons>
-        {ButtonsLinks.map(({ content, type, Icon }, idx) => (
+        {ButtonsLinks.map(({ content, type, Icon, alt }, idx) => (
           <Button type={type} key={idx}>
-            {Icon && <img src={Icon} alt="Live" />}
+            {Icon && <img src={Icon} alt={alt} />}
             {content}
           </Button>
         ))}

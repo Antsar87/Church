@@ -1,0 +1,1 @@
+export const copyRight = <>CopyRight &copy; 2021 JCEA</>
