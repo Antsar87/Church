@@ -5,6 +5,7 @@ export const Footer = styled.footer`
   padding: 0 7rem;
   margin-top: 3rem;
   height: 20rem;
+  overflow: hidden;
 `;
 
 export const Flex = styled.div`

@@ -23,9 +23,9 @@ const Section = () => {
         ArrowRight={ArrowRight}
         InformationCarousel={InformationCarousel}
       />
-      <div>
+      <Styled.Boxes>
         <SectionBoxes InformationMessages={InformationMessages} />
-      </div>
+      </Styled.Boxes>
     </Styled.Box>
   );
 };

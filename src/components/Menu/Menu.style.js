@@ -3,11 +3,15 @@ import { device } from '../../config/Responsive';
 
 export const Box = styled.div`
   background: ${(props) => props.theme.blueDark};
-  
+  width: 100%;
+
   @media ${device.laptop} {
     .navbar {
       display: none;
     }
+  }
+  ul {
+    padding-left: 0 !important;
   }
 `;
 
@@ -21,7 +25,6 @@ export const Flex = styled.div`
   @media ${device.laptop} {
     display: flex;
   }
-
   .Links {
     display: flex;
     gap: 2rem;
@@ -31,6 +34,7 @@ export const Flex = styled.div`
 
 export const Logo = styled.img`
   width: 15rem;
+  
 `;
 
 export const BoxButtons = styled.div`
@@ -41,6 +45,6 @@ export const BoxButtons = styled.div`
     height: 2rem;
   }
   a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 `;

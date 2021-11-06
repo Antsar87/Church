@@ -28,7 +28,7 @@ const SectionCarousel = ({ InformationCarousel, ArrowLeft, ArrowRight }) => {
       <div className="carousel-inner">
         {InformationCarousel.map(({ photo, content, active }, idx) => (
           <div className={`carousel-item ${active}`} key={idx}>
-            <img src={photo} className="d-block w-100" alt="malo" />
+            <img src={photo} className="d-block w-100" alt="" />
             <div className="carousel-caption d-none d-md-block">
               <div className="back" />
               <p>{content}</p>

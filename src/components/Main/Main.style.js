@@ -2,29 +2,45 @@ import styled from 'styled-components';
 
 export const Main = styled.main`
   display: flex;
-  height: 48rem;
+  flex-direction: column;
+  height: 50rem;
   gap: 1rem;
   margin-top: 2rem;
 `;
 
+export const FlexTitle = styled.div`
+  display: flex;
+
+  .box1 {
+    flex: 2;
+  }
+  .box2 {
+    flex: 1;
+  }
+`;
+
+export const Flex = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+
 export const Precation = styled.div`
-  height: 90%;
-  width: 67%;
+  flex: 2;
 `;
 
 export const PrecationBox = styled.div`
   border-radius: 10px;
   background: ${(props) => props.theme.white};
+  height: 100%;
   padding: 1rem 2rem 2rem 2rem;
 `;
 
 export const Annonce = styled.div`
   flex: 1;
   height: 100%;
-  padding-top: 1rem;
 
   img {
-    height: 92%;
+    height: 100%;
     width: 100%;
   }
 `;

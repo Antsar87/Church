@@ -4,7 +4,7 @@ export const Button = styled.a`
   text-decoration: none;
   font-weight: 700;
   text-transform: capitalize;
-  padding: .5rem 1.5rem;
+  padding: .5rem 1rem;
   border-radius: 2px;
   font-size: 1.5rem;
   cursor: pointer;

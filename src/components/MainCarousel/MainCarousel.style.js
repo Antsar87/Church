@@ -6,6 +6,7 @@ export const Box = styled.div`
 
   .slick-slider {
     display: grid;
+    height: 100%;
     row-gap: 1.5rem;
     grid-template-areas:
       'head head head head'

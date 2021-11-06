@@ -1,17 +1,36 @@
 import styled from 'styled-components';
+import { device } from '../../config/Responsive';
 
 export const Box = styled.section`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 20.5rem);
-  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50rem;
+  gap: 1rem;
   border-radius: 10px;
-  margin-top: 30px;
+  margin-top: 3rem;
 
+  @media ${device.tablet} {
+    height: 45rem;
+    flex-direction: row;
+  }
 
   .carousel {
-    grid-column: 1 / 3;
-    grid-row: 1 / -1;
+    height: 60%;
+
+    @media ${device.tablet} {
+      flex: 2;
+      height: 100%;
+    }
+
+    &-item {
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: fill;
+      }
+    }
 
     &-inner {
       height: 100%;
@@ -19,20 +38,20 @@ export const Box = styled.section`
 
     .circle {
       border-radius: 50%;
-      width: 10px;
-      height: 10px;
+      width: 1rem;
+      height: 1rem;
     }
 
     &-indicators {
       margin-bottom: 0;
       .active {
         background-color: ${(props) => props.theme.yellow};
-        height: 10px;
+        height: 1rem;
       }
       [data-bs-target] {
         opacity: 1;
-        width: 10px;
-        height: 10px;
+        width: 1rem;
+        height: 1rem;
       }
     }
 
@@ -71,7 +90,22 @@ export const Box = styled.section`
 
     &-control-prev,
     &-control-next {
-      width: 10%;
+      width: 20%;
+
+      @media ${device.tablet} {
+        width: 10%;
+      }
     }
+  }
+`;
+
+export const Boxes = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  @media ${device.tablet} {
+    flex-direction: column;
   }
 `;
