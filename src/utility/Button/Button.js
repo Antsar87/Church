@@ -4,7 +4,7 @@ export const Button = styled.a`
   text-decoration: none;
   font-weight: 700;
   text-transform: capitalize;
-  padding: 5px 15px;
+  padding: .5rem 1.5rem;
   border-radius: 2px;
   font-size: 1.5rem;
   cursor: pointer;
@@ -17,7 +17,7 @@ export const Button = styled.a`
       background: ${(props) => props.theme.white};
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 1rem;
       border: 1px solid white;
 
       img {

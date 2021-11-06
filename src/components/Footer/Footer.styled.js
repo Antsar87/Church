@@ -22,7 +22,6 @@ export const Box = styled.div`
 
 export const Logo = styled.img`
   height: 8rem;
-  object-fit: cover;
 `;
 
 export const Title = styled.h2`
@@ -32,6 +31,7 @@ export const Title = styled.h2`
 
 export const SocialMediaBox = styled.div`
   display: flex;
+  gap: 1rem;
 `;
 
 export const SocialMediaLink = styled.a`
@@ -44,7 +44,7 @@ export const Menu = styled.ul`
   padding: 0;
 `;
 
-export const Content = styled.p`
+export const Content = styled.div`
   color: ${(props) => props.theme.white};
   display: flex;
   justify-content: center;

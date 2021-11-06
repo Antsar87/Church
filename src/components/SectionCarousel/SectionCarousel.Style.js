@@ -9,6 +9,7 @@ export const Box = styled.div`
   justify-content: center;
   align-items: center;
 
+
   .ArrowLeft {
     padding-right: 10px;
   }

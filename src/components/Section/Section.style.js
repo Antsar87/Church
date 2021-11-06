@@ -8,9 +8,14 @@ export const Box = styled.section`
   border-radius: 10px;
   margin-top: 30px;
 
+
   .carousel {
     grid-column: 1 / 3;
     grid-row: 1 / -1;
+
+    &-inner {
+      height: 100%;
+    }
 
     .circle {
       border-radius: 50%;

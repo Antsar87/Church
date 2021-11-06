@@ -4,7 +4,7 @@ export const Form = styled.form`
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  background: ${props => props.paint || "rgba(161, 161, 161, 0.452)"} ;
+  background: ${(props) => props.paint || 'rgba(161, 161, 161, 0.452)'};
   padding: 0 0.5rem;
   border-radius: 2px;
   height: 30px;
@@ -23,9 +23,10 @@ export const Input = styled.input`
   background: transparent;
   border: none;
   color: white;
+  width: 100%;
+  font-size: 1.5rem;
   &::placeholder {
     text-transform: capitalize;
-    font-size: 1.5rem;
     color: ${(props) => props.theme.white};
   }
 

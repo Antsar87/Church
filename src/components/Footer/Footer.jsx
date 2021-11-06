@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fragment } from 'react';
 
 //Components
 import Recherche from '../../utility/Recherche/Recherche';
@@ -36,12 +37,12 @@ const Footer = () => {
           <Styled.Content>
             <h3>{Contact.Content}</h3>
             {Contact.Information.map((item, idx) => (
-              <>
+              <Fragment key={idx}>
                 <div className="flex">
                   <img src={item.img} alt={item.alt} />
                   <p>{item.content}</p>
                 </div>
-              </>
+              </Fragment>
             ))}
           </Styled.Content>
         </Styled.Box>

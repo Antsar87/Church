@@ -17,7 +17,6 @@ const EnseignementBox = ({
   date,
   box,
 }) => {
-  console.log(photo);
   return (
     <Styled.MainBox box={box}>
       <div className="boxImg">
