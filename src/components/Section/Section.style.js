@@ -6,6 +6,7 @@ export const Box = styled.section`
   justify-content: space-between;
   flex-direction: column;
   height: 50rem;
+  padding: 0 2rem;
   gap: 1rem;
   border-radius: 10px;
   margin-top: 3rem;
