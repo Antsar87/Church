@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { device } from '../../config/Responsive';
 
 export const MainBox = styled.div`
   .boxContent {
@@ -39,9 +40,11 @@ export const MainBox = styled.div`
     props.box === 'main' &&
     css`
       .boxImg {
+        width: 100%;
+        height: 100%;
         img {
-          width: 60rem;
-          height: 45rem;
+          width: 100%;
+          height: 100%;
           object-fit: cover left;
         }
       }
@@ -69,20 +72,23 @@ export const MainBox = styled.div`
     props.box === 'secondary' &&
     css`
       display: flex;
+      flex-direction: column;
       margin-bottom: 1rem;
       gap: 1rem;
 
-      .boxImg {
-        height: 15rem;
-        width: 20rem;
+      @media ${device.mobileL}{
+        flex-direction: row;
+      }
 
+      .boxImg {
         img {
-          object-fit: cover;
+          object-fit: cover top;
           width: 100%;
           height: 100%;
           border-radius: 10px;
         }
       }
+
 
       .boxFlex__child {
         gap: 0.5rem;

@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <Styled.Footer>
       <Styled.Flex>
-        <Styled.Box>
+        <Styled.Box className="responsive_Center">
           <Styled.Logo src={Main.Logo} />
           <Styled.Title>{Main.Title}</Styled.Title>
           <Styled.SocialMediaBox>
@@ -26,28 +26,31 @@ const Footer = () => {
             ))}
           </Styled.SocialMediaBox>
         </Styled.Box>
-        <Styled.Box>
-          <Styled.Title>{Menu}</Styled.Title>
-          <Styled.Menu>
-            <Links />
-          </Styled.Menu>
-        </Styled.Box>
-        <Styled.Box>
-          <Styled.Title>{Contact.Title}</Styled.Title>
-          <Styled.Content>
-            <h3>{Contact.Content}</h3>
-            {Contact.Information.map((item, idx) => (
-              <Fragment key={idx}>
-                <div className="flex">
-                  <img src={item.img} alt={item.alt} />
-                  <p>{item.content}</p>
-                </div>
-              </Fragment>
-            ))}
-          </Styled.Content>
-        </Styled.Box>
-        <Styled.Box>
-          <Recherche paint={props => props.theme.blueDark}/>
+
+        <div className="responsive">
+          <Styled.Box>
+            <Styled.Title>{Menu}</Styled.Title>
+            <Styled.Menu>
+              <Links />
+            </Styled.Menu>
+          </Styled.Box>
+          <Styled.Box>
+            <Styled.Title>{Contact.Title}</Styled.Title>
+            <Styled.Content>
+              <h3>{Contact.Content}</h3>
+              {Contact.Information.map((item, idx) => (
+                <Fragment key={idx}>
+                  <div className="flex">
+                    <img src={item.img} alt={item.alt} />
+                    <p>{item.content}</p>
+                  </div>
+                </Fragment>
+              ))}
+            </Styled.Content>
+          </Styled.Box>
+        </div>
+        <Styled.Box className="last">
+          <Recherche paint={(props) => props.theme.blueDark} />
           <Styled.Live href={ButtonInformation.Link}>
             <img src={ButtonInformation.IconLive} alt="Live" />
             {ButtonInformation.Content}

@@ -1,18 +1,55 @@
 import styled from 'styled-components';
+import { device } from '../../config/Responsive';
 
 export const Footer = styled.footer`
   background: black;
-  padding: 0 7rem;
+  padding: 2rem;
   margin-top: 3rem;
-  height: 20rem;
   overflow: hidden;
+
+  @media ${device.laptop} {
+    padding: 0 7rem;
+    height: 20rem;
+  }
 `;
 
 export const Flex = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 3rem;
   height: 100%;
+
+  .responsive {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .responsive_Center {
+    justify-content: center;
+    align-items: center;
+
+    @media ${device.mobileL} {
+      align-items: flex-start;
+    }
+  }
+
+  .last {
+    display: none;
+
+    @media ${device.tablet} {
+      display: block;
+    }
+  }
+
+  @media ${device.mobileL} {
+    flex-direction: row;
+  }
+
+  @media ${device.tablet} {
+    justify-content: space-between;
+  }
 `;
 
 export const Box = styled.div`
@@ -23,6 +60,10 @@ export const Box = styled.div`
 
 export const Logo = styled.img`
   height: 8rem;
+
+  @media ${device.mobileL} {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h2`
@@ -73,6 +114,8 @@ export const Live = styled.a`
   padding: 0.25rem;
   text-decoration: none;
   font-size: 1.5rem;
+  display: inline-block;
+  width: 100%;
 
   img {
     width: 2.3rem;

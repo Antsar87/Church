@@ -1,10 +1,9 @@
 import styled from 'styled-components';
+import { device } from '../../config/Responsive';
 
 export const Decouverte = styled.div`
-margin-top: 2rem;
-`;
-
-export const Flex = styled.div`
+  margin-top: 2rem;
+  padding: 0 2rem;
 `;
 
 export const Box = styled.div`
@@ -13,8 +12,11 @@ export const Box = styled.div`
   flex-direction: column;
   align-items: center;
   img {
-    height: 30rem;
     width: 100%;
+
+    @media ${device.mobileM} {
+      height: 30rem;
+    }
   }
 
   p {

@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import { device } from '../../config/Responsive';
 
 export const Temoignages = styled.div`
   margin-top: 3rem;
+  padding: 0 2rem;
 `;
 
 export const Box = styled.div`
@@ -13,8 +15,13 @@ export const Box = styled.div`
 
 export const BoxChild = styled.div`
   display: flex;
+  flex-direction: column;
   margin: 1.3rem;
-  gap: 3rem;
+  gap: 3rem; 
+
+  @media ${device.mobileL}{
+    flex-direction: row;
+  }
 `;
 
 export const BoxImg = styled.div`

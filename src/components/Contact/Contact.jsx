@@ -21,9 +21,13 @@ const Contact = () => {
             <p>{content}</p>
           </Styled.BoxContent>
           <Styled.BoxForm>
-            <Styled.Input placeholder={Placeholder_Name} type="text"/>
-            <Styled.Input placeholder={Placeholder_mail} type="mail"/>
-            <Styled.Button>{Button_Content}</Styled.Button>
+            <Styled.Boxes>
+              <Styled.Input placeholder={Placeholder_Name} type="text" />
+              <Styled.Input placeholder={Placeholder_mail} type="mail" />
+            </Styled.Boxes>
+            <Styled.Boxes>
+              <Styled.Button>{Button_Content}</Styled.Button>
+            </Styled.Boxes>
           </Styled.BoxForm>
         </Styled.Box>
       </Styled.BoxFlex>

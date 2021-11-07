@@ -32,6 +32,7 @@ const MainCarousel = ({
   paint,
   rows,
   slidesPerRow,
+  responsive
 }) => {
   const settings = {
     dots: true,
@@ -41,6 +42,7 @@ const MainCarousel = ({
     slidesToScroll,
     rows: rows || 1,
     slidesPerRow: slidesPerRow || 1,
+    responsive,
     nextArrow: (
       <Styled.NextArrow>
         {paint === 'green' ? (

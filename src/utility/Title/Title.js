@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../config/Responsive';
 
 const Title = styled.h2`
   text-transform: capitalize;
@@ -13,8 +14,16 @@ const Title = styled.h2`
     position: absolute;
     bottom: 5px;
     margin-left: 10px;
-    width: 50rem;
+    width: 10rem;
     border: 1px solid ${(props) => props.paint};
+
+    @media ${device.mobileL}{
+      width: 30rem;
+    }
+
+    @media ${device.laptop} {
+      width: 50rem;
+    }
   }
 `;
 

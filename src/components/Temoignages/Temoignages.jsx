@@ -9,6 +9,18 @@ import * as Styled from './Temoignages.styled';
 import { Information, title } from './TemoignagesData';
 
 const Temoignages = () => {
+  const responsive = [
+    {
+      breakpoint: 769,
+      settings: {
+        rows: 2,
+        slidesPerRow: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    
+  ];
   return (
     <Styled.Temoignages>
       <Title paint={(props) => props.theme.blueLight}>{title}</Title>
@@ -19,6 +31,7 @@ const Temoignages = () => {
           paint="blueLight"
           rows={2}
           slidesPerRow={2}
+          responsive={responsive}
         >
           {Information.map(({ img, content, title }, idx) => (
             <div key={idx}>
