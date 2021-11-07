@@ -17,7 +17,7 @@ import {
 
 const Enseignement = () => {
   return (
-    <Styled.Enseignement>
+    <Styled.Enseignement id="enseignement">
       <Title paint={(props) => props.theme.pinkDark}>{title}</Title>
       <Styled.BoxFlex>
         <div>

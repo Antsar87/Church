@@ -32,7 +32,7 @@ const Videos = () => {
     },
   ];
   return (
-    <Styled.Video>
+    <Styled.Video id="video">
       <Styled.VideoBox>
         <Title VoF="out" paint={(props) => props.theme.yellow}>
           vidéos

@@ -9,7 +9,7 @@ export const Box = styled.section`
   padding: 0 2rem;
   gap: 1rem;
   border-radius: 10px;
-  margin-top: 3rem;
+  margin-top: 10rem;
 
   @media ${device.tablet} {
     height: 45rem;

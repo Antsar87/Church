@@ -50,7 +50,7 @@ const Decouverte = () => {
     },
   ];
   return (
-    <Styled.Decouverte>
+    <Styled.Decouverte id="decouverte">
       <Title paint={(props) => props.theme.greenDark}>découverte</Title>
 
       <MainCarousel

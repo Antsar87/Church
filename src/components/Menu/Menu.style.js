@@ -4,6 +4,8 @@ import { device } from '../../config/Responsive';
 export const Box = styled.div`
   background: ${(props) => props.theme.blueDark};
   width: 100%;
+  position: fixed;
+  z-index: 1000;
 
   @media ${device.laptop} {
     .navbar {
@@ -34,7 +36,6 @@ export const Flex = styled.div`
 
 export const Logo = styled.img`
   width: 15rem;
-  
 `;
 
 export const BoxButtons = styled.div`

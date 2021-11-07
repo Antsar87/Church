@@ -22,7 +22,7 @@ const Temoignages = () => {
     
   ];
   return (
-    <Styled.Temoignages>
+    <Styled.Temoignages id="temoignages">
       <Title paint={(props) => props.theme.blueLight}>{title}</Title>
       <Styled.Box>
         <MainCarousel

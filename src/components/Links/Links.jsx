@@ -10,7 +10,7 @@ const Links = () => {
     <>
       {Link.map(({ content, link }, idx) => (
         <Styled.BoxLink key={idx}>
-          <Styled.Link href={link}>{content}</Styled.Link>
+          <Styled.Link href={`#${link}`}>{content}</Styled.Link>
         </Styled.BoxLink>
       ))}
     </>

@@ -17,7 +17,9 @@ const Menu = () => {
     <Styled.Box>
       <div style={{ maxWidth: '1200px', margin: '0 auto', overflow: "hidden" }}>
         <Styled.Flex>
+          <a href="#home">
           <Styled.Logo src={srcLogo} alt="Logo" />
+          </a>
           <Links />
           <Recherche />
           <Styled.BoxButtons>

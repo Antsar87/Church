@@ -39,7 +39,7 @@ const Main = () => {
   ];
 
   return (
-    <Styled.Main>
+    <Styled.Main id="main">
       <Styled.Precation>
         <Title paint={(props) => props.theme.blueDark} className="Title">
           {TitlePredication}

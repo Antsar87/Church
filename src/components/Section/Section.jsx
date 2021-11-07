@@ -17,7 +17,7 @@ import {
 
 const Section = () => {
   return (
-    <Styled.Box>
+    <Styled.Box id="home">
       <SectionCarousel
         ArrowLeft={ArrowLeft}
         ArrowRight={ArrowRight}
