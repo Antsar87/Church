@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { device } from '../../config/Responsive';
 
 export const Decouverte = styled.div`
-  margin-top: 2rem;
   padding: 0 2rem;
 `;
 

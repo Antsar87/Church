@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from '../../config/Responsive';
 
 export const Temoignages = styled.div`
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 0 2rem;
 `;
 

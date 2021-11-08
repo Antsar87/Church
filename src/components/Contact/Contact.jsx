@@ -13,7 +13,7 @@ import {
 } from './ContactData';
 const Contact = () => {
   return (
-    <Styled.Contact id="contact">
+    <Styled.Contact>
       <Styled.BoxFlex>
         <Styled.Box>
           <Styled.BoxContent>

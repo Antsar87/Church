@@ -1,16 +1,20 @@
 import React from 'react';
 
+//Routes
+import { Link } from 'react-router-dom';
+
 //Style
-import * as Styled from "./Links.styled"
+import * as Styled from './Links.styled';
 
 ///Data
-import { Link } from './LinksData';
+import { LinkInformation } from './LinksData';
+
 const Links = () => {
   return (
     <>
-      {Link.map(({ content, link }, idx) => (
+      {LinkInformation.map(({ content, link }, idx) => (
         <Styled.BoxLink key={idx}>
-          <Styled.Link href={`#${link}`}>{content}</Styled.Link>
+          <Link to={link}>{content}</Link>
         </Styled.BoxLink>
       ))}
     </>

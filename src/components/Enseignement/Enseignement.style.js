@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from '../../config/Responsive';
 
 export const Enseignement = styled.div`
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 0 2rem;
 `;
 
@@ -13,7 +13,7 @@ export const BoxFlex = styled.div`
   display: flex;
   gap: 2rem;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   flex-direction: column;
 
   div {

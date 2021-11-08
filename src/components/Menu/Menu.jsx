@@ -1,10 +1,12 @@
 import React from 'react';
 import { Button } from '../../utility/Button/Button';
 
-import Recherche from '../../utility/Recherche/Recherche';
+// Routes
+import { Link } from 'react-router-dom';
 
 //Components
 import Links from '../Links/Links';
+import Recherche from '../../utility/Recherche/Recherche';
 
 //Styles
 import * as Styled from './Menu.style';
@@ -15,11 +17,11 @@ import { srcLogo, ButtonsLinks } from './MenuData';
 const Menu = () => {
   return (
     <Styled.Box>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', overflow: "hidden" }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', overflow: 'hidden' }}>
         <Styled.Flex>
-          <a href="#home">
-          <Styled.Logo src={srcLogo} alt="Logo" />
-          </a>
+          <Link to="/">
+            <Styled.Logo src={srcLogo} alt="Logo" />
+          </Link>
           <Links />
           <Recherche />
           <Styled.BoxButtons>
@@ -34,7 +36,9 @@ const Menu = () => {
 
         <nav className="navbar navbar-expand-xl navbar-dark ">
           <div className="container-fluid" style={{ padding: '2rem' }}>
-            <Styled.Logo src={srcLogo} alt="Logo" />
+            <Link to="/">
+              <Styled.Logo src={srcLogo} alt="Logo" />
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -46,7 +50,10 @@ const Menu = () => {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <ul className="nav-item mb-2 mt-5">
                   <Links />

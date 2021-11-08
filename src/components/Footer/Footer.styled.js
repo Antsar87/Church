@@ -116,6 +116,7 @@ export const Live = styled.a`
   font-size: 1.5rem;
   display: inline-block;
   width: 100%;
+  margin-top: 1.5rem;
 
   img {
     width: 2.3rem;

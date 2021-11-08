@@ -1,8 +1,8 @@
 ///Links
-export const Link = [
-  { content: 'prédication', link: 'main' },
+export const LinkInformation = [
+  { content: 'prédication', link: 'predication' },
   { content: 'enseignement', link: 'enseignement' },
   { content: 'découverte', link: 'decouverte' },
   { content: 'témoignage', link: 'temoignages' },
-  { content: 'contacts', link: 'contact' },
+  { content: 'contacts', link: 'contacts' },
 ];

@@ -3,8 +3,8 @@ import { device } from '../../config/Responsive';
 
 export const Box = styled.div`
   background: ${(props) => props.theme.blueDark};
-  width: 100%;
   position: fixed;
+  width: 100%;
   z-index: 1000;
 
   @media ${device.laptop} {
@@ -18,7 +18,7 @@ export const Box = styled.div`
 `;
 
 export const Flex = styled.div`
-  height: 7rem;
+  height: 6rem;
   display: none;
   align-items: center;
   justify-content: center;

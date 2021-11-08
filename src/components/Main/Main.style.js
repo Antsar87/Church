@@ -6,7 +6,6 @@ export const Main = styled.main`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-top: 2rem;
   padding: 0 2rem;
 
   @media ${device.tablet} {
