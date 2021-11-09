@@ -76,7 +76,7 @@ export const MainBox = styled.div`
       margin-bottom: 1rem;
       gap: 1rem;
 
-      @media ${device.mobileL}{
+      @media ${device.mobileL} {
         flex-direction: row;
       }
 
@@ -88,7 +88,6 @@ export const MainBox = styled.div`
           border-radius: 10px;
         }
       }
-
 
       .boxFlex__child {
         gap: 0.5rem;

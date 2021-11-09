@@ -23,13 +23,15 @@ const Menu = () => {
             <Styled.Logo src={srcLogo} alt="Logo" />
           </Link>
           <Links />
-          <Recherche />
+          <Recherche className="input" />
           <Styled.BoxButtons>
-            {ButtonsLinks.map(({ content, type, Icon, alt }, idx) => (
-              <Button type={type} key={idx}>
-                {Icon && <img src={Icon} alt={alt} />}
-                {content}
-              </Button>
+            {ButtonsLinks.map(({ content, type, Icon, alt, link }, idx) => (
+              <Link to={`${link}`} key={idx}>
+                <Button type={type}>
+                  {Icon && <img src={Icon} alt={alt} />}
+                  {content}
+                </Button>
+              </Link>
             ))}
           </Styled.BoxButtons>
         </Styled.Flex>
@@ -63,12 +65,16 @@ const Menu = () => {
                 </li>
                 <li className="nav-item">
                   <Styled.BoxButtons>
-                    {ButtonsLinks.map(({ content, type, Icon, alt }, idx) => (
-                      <Button type={type} key={idx}>
-                        {Icon && <img src={Icon} alt={alt} />}
-                        {content}
-                      </Button>
-                    ))}
+                    {ButtonsLinks.map(
+                      ({ content, type, Icon, alt, link }, idx) => (
+                        <Link to={`${link}`} key={idx}>
+                          <Button type={type}>
+                            {Icon && <img src={Icon} alt={alt} />}
+                            {content}
+                          </Button>
+                        </Link>
+                      )
+                    )}
                   </Styled.BoxButtons>
                 </li>
               </ul>

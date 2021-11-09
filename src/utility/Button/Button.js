@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
 
-export const Button = styled.a`
+export const Button = styled.button`
   text-decoration: none;
+  border: none;
   font-weight: 700;
   text-transform: capitalize;
   padding: .5rem 1rem;

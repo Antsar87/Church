@@ -29,7 +29,7 @@ const Enseignement = () => {
           ))}
           <Button
             type="secondary-DarkPink"
-            style={{ display: 'block', marginTop: '3rem', textAlign: 'center' }}
+            style={{ display: 'block', marginTop: '3rem', textAlign: 'center', width: "100%" }}
           >
             voir plus
           </Button>

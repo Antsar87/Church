@@ -12,11 +12,11 @@ export const srcIconLive = IconLive;
 export const ButtonsLinks = [
   {
     content: 'live streaming',
-    link: '',
+    link: 'live',
     type: 'live',
     Icon: srcIconLive,
     alt: 'Live',
   },
-  { content: 'se connecter', link: '', type: 'outline', },
-  { content: "s'inscrire", link: '', type: 'filled' },
+  { content: 'se connecter', link: 'connecter', type: 'outline' },
+  { content: "s'inscrire", link: "s'inscrire", type: 'filled' },
 ];

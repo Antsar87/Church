@@ -10,7 +10,7 @@ import { inputData, srcIconSearch } from './RechercheData';
 
 const Recherche = (props) => {
   return (
-    <Styled.Form paint={props.paint}>
+    <Styled.Form paint={props.paint} className={`${props.className}`}>
       <Styled.Submit >
         <img src={srcIconSearch} alt="Recherche" />
       </Styled.Submit>

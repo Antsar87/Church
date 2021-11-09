@@ -7,6 +7,10 @@ export const Box = styled.div`
   width: 100%;
   z-index: 1000;
 
+  .input {
+    width: 10%;
+  }
+
   @media ${device.laptop} {
     .navbar {
       display: none;
@@ -47,5 +51,6 @@ export const BoxButtons = styled.div`
   }
   a {
     font-size: 1rem;
+    text-decoration: none;
   }
 `;
