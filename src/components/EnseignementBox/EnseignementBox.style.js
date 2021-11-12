@@ -24,6 +24,7 @@ export const MainBox = styled.div`
 
   .boxFlex {
     display: flex;
+    gap: 1rem;    
 
     &__child {
       display: flex;
@@ -78,6 +79,7 @@ export const MainBox = styled.div`
 
       @media ${device.mobileL} {
         flex-direction: row;
+        align-items: center;
       }
 
       .boxImg {
@@ -97,6 +99,16 @@ export const MainBox = styled.div`
         display: flex;
         gap: 1rem;
         flex-direction: column;
+      }
+
+      .boxContent {
+        h2 {
+          font-size: 1.2rem;
+
+          @media ${device.mobileM}{
+            font-size: 2rem;
+          }
+        }
       }
     `}
 `;

@@ -16,6 +16,7 @@ const EnseignementBox = ({
   name,
   date,
   box,
+  className
 }) => {
   return (
     <Styled.MainBox box={box}>
