@@ -4,13 +4,13 @@ import { device } from '../../config/Responsive';
 export const Box = styled.div`
   position: relative;
   .Back {
-    height: 20rem;
+    height: 10rem;
     width: 100%;
 
     &--img {
       z-index: -1;
       position: absolute;
-      height: 30rem;
+      height: 20rem;
       width: 100%;
       background: black;
     }

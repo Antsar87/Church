@@ -58,6 +58,7 @@ const Decouverte = () => {
         slidesToScroll={1}
         paint="green"
         responsive={responsive}
+        link="decouverte"
       >
         {Information.map((item, idx) => (
           <Styled.Box key={idx}>

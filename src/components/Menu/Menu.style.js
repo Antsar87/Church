@@ -3,7 +3,6 @@ import { device } from '../../config/Responsive';
 
 export const Box = styled.div`
   background: ${(props) => props.theme.blueDark};
-  position: fixed;
   width: 100%;
   z-index: 1000;
 

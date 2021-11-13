@@ -24,4 +24,8 @@ export const BoxFlex = styled.div`
     flex-direction: row;
     padding: 2rem;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;

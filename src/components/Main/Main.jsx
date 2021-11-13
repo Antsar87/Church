@@ -50,6 +50,7 @@ const Main = () => {
             slidesToScroll={2}
             paint="secondary-DarkBlue"
             responsive={responsive}
+            link="predication"
           >
             {Carousel_Information.map(
               ({ Img, type, text, ImgProfile, name, date }, idx) => (

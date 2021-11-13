@@ -32,6 +32,7 @@ const Temoignages = () => {
           rows={2}
           slidesPerRow={2}
           responsive={responsive}
+          link="temoignages"
         >
           {Information.map(({ img, content, title }, idx) => (
             <div key={idx}>

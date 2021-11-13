@@ -42,6 +42,7 @@ const Videos = () => {
           slidesToScroll={1}
           paint="yellow"
           responsive={responsive}
+          link="videos"
         >
           {Information.map((item, idx) => (
             <Styled.Box key={idx}>

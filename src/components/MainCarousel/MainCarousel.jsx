@@ -1,10 +1,10 @@
 import Slider from 'react-slick';
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 //Component
 import { Button } from '../../utility/Button/Button';
-
-//Importing Icon
 
 //Importing Arrows
 import ArrowLeft from '../../images/Arrows/ArrowLeftMain.png';
@@ -32,7 +32,8 @@ const MainCarousel = ({
   paint,
   rows,
   slidesPerRow,
-  responsive
+  responsive,
+  link
 }) => {
   const settings = {
     dots: true,
@@ -73,12 +74,14 @@ const MainCarousel = ({
   return (
     <Styled.Box type={paint}>
       <Slider {...settings}>{children}</Slider>
-      <Button
-        style={{ position: 'absolute', right: 0, bottom: '0' }}
-        type={paint}
-      >
-        voir plus
-      </Button>
+      <Link to={link}>
+        <Button
+          style={{ position: 'absolute', right: 0, bottom: '0' }}
+          type={paint}
+        >
+          voir plus
+        </Button>
+      </Link>
     </Styled.Box>
   );
 };

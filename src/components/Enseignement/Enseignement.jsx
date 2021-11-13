@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 //Components
 import Title from '../../utility/Title/Title';
@@ -27,12 +28,14 @@ const Enseignement = () => {
           {Information_Secondary_Box.map((item, idx) => (
             <EnseignementBox {...item} key={idx} box="secondary" />
           ))}
-          <Button
-            type="secondary-DarkPink"
-            style={{ display: 'block', marginTop: '3rem', textAlign: 'center', width: "100%" }}
-          >
-            voir plus
-          </Button>
+          <Link to="/enseignement">
+            <Button
+              type="secondary-DarkPink"
+              style={{ display: 'block', marginTop: '3rem', textAlign: 'center', width: "100%" }}
+            >
+              voir plus
+            </Button>
+          </Link>
         </div>
       </Styled.BoxFlex>
     </Styled.Enseignement>
