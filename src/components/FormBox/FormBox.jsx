@@ -52,12 +52,12 @@ const FormBox = (props) => {
           <p className="Box__Center--text">{Information.center}</p>
         </div>
         <div className="Box__Login">
-          {Information.buttons.map(({ img, content, classname, id }) => (
+          {Information.buttons.map(({ icon, content, classname, id }) => (
             <button
               key={id}
               className={`Box__Login--Button Box__Login--${classname}`}
             >
-              <div className="Box__Login--Button__Img"></div>
+              <div className="Box__Login--Button__Img">{icon}</div>
               <p>{content}</p>
             </button>
           ))}

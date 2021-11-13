@@ -179,6 +179,10 @@ export const FormBox = styled.div`
           background: white;
           height: 3rem;
           width: 3rem;
+
+          svg {
+            height: 3rem;
+          }
         }
 
         p {
@@ -189,10 +193,20 @@ export const FormBox = styled.div`
 
       &--facebook {
         background: ${(props) => props.theme.blueLight};
+
+        div {
+          color: ${(props) => props.theme.blueLight};
+          border-radius: 50%;
+        }
       }
 
       &--google {
         background: black;
+
+        div {
+          color: black;
+          border-radius: 10px;
+        }
       }
 
       &--text {
