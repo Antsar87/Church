@@ -5,7 +5,7 @@ import { social } from './EnseignementPageSocialData';
 const EnseignementPageSocial = (props) => {
   return (
     <div className={props.className}>
-      <p className="Box__text">{social.name}</p>
+      <p className="Box__text">{props.text}</p>
       {social.logo.map((item, idx) => (
         <img src={item.src} alt="" key={idx} />
       ))}

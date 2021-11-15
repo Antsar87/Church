@@ -1,14 +1,8 @@
 ///Carousel Data
-///Importing Arrows
-import ArrowL from '../../images/Arrows/ArrowLeftSection.png';
-import ArrowR from '../../images/Arrows/ArrowRightSection.png';
 
 ///Importing Images
 import Img from '../../images/img/Two man.png';
 
-//Exporting Arrows
-export const ArrowLeft = ArrowL;
-export const ArrowRight = ArrowR;
 ///////////////
 
 //Exporting Carousel Information

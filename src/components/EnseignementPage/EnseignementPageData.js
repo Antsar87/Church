@@ -1,8 +1,8 @@
 import photo2 from '../../images/img/Enseignement2.png';
 import photo3 from '../../images/img/Enseignement3.png';
 import photo4 from '../../images/img/Two man.png';
-import photo5 from '../../images/img/Enseignement4.png';
 import profile from '../../images/img/Profile.png';
+import photo5 from '../../images/img/Enseignement4.png';
 
 import Img from '../../images/img/Two man.png';
 

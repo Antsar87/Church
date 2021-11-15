@@ -4,7 +4,6 @@ import Twitter from '../../images/Icon/SocialMediaBlue/Twitter.png';
 import Whatssap from '../../images/Icon/SocialMediaBlue/Whatssap.png';
 
 export const social = {
-  name: 'Partagez l’article',
   logo: [
     { link: '', src: Facebook },
     { link: '', src: Instagram },

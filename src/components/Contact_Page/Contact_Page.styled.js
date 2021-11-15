@@ -6,7 +6,6 @@ export const Contact = styled.div`
   position: relative;
   z-index: 5;
 
-
   .self {
     text-align: end;
   }
@@ -16,12 +15,11 @@ export const Contact = styled.div`
     width: 100%;
     position: absolute;
     z-index: -1;
-    top: 1rem;
+    top: 0;
     &--Back {
       background: black;
       height: 100%;
-    z-index: 5;
-
+      z-index: 5;
     }
   }
 
@@ -86,10 +84,9 @@ export const Contact = styled.div`
     align-items: center;
     flex-direction: column;
 
-    @media ${device.tablet}{
+    @media ${device.tablet} {
       flex-direction: row;
-    justify-content: space-between;
-
+      justify-content: space-between;
     }
 
     &__Box {

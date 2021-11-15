@@ -11,22 +11,22 @@ import {
   Placeholder_Name,
   title,
 } from './ContactData';
-const Contact = () => {
+const Contact = ({column, className}) => {
   return (
-    <Styled.Contact>
-      <Styled.BoxFlex>
-        <Styled.Box>
-          <Styled.BoxContent>
+    <Styled.Contact className={className} column={column}>
+      <Styled.BoxFlex column={column}>
+        <Styled.Box column={column}>
+          <Styled.BoxContent column={column}>
             <h3>{title}</h3>
             <p>{content}</p>
           </Styled.BoxContent>
-          <Styled.BoxForm>
-            <Styled.Boxes>
+          <Styled.BoxForm column={column}> 
+            <Styled.Boxes column={column}>
               <Styled.Input placeholder={Placeholder_Name} type="text" />
               <Styled.Input placeholder={Placeholder_mail} type="mail" />
             </Styled.Boxes>
             <Styled.Boxes>
-              <Styled.Button>{Button_Content}</Styled.Button>
+              <Styled.Button column={column}>{Button_Content}</Styled.Button>
             </Styled.Boxes>
           </Styled.BoxForm>
         </Styled.Box>

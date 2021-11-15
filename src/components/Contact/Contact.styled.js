@@ -1,20 +1,33 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { device } from '../../config/Responsive';
 
 export const Contact = styled.div`
-  padding: 0 2rem;
   margin-top: 3rem;
   height: 30rem;
+  border-radius: 10px;
+  background: ${(props) => props.theme.blueDark};
+
+  ${(props) =>
+    props.column &&
+    css`
+      height: 100%;
+      margin-top: 0;
+      padding: 0 1rem;
+    `}
 `;
 
 export const BoxFlex = styled.div`
-  background: ${(props) => props.theme.blueDark};
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+
+  ${(props) =>
+    props.column &&
+    css`
+      justify-content: center;
+    `}
 `;
 
 export const Box = styled.div`
@@ -23,6 +36,12 @@ export const Box = styled.div`
   @media ${device.tablet} {
     width: 75%;
   }
+
+  ${(props) =>
+    props.column &&
+    css`
+      width: 100% !important;
+    `}
 `;
 
 export const BoxContent = styled.div`
@@ -51,7 +70,7 @@ export const BoxContent = styled.div`
   }
 
   @media ${device.tablet} {
-    text-align: justify;
+    text-align: center;
     h3 {
       font-size: 2.9rem;
     }
@@ -60,6 +79,17 @@ export const BoxContent = styled.div`
       font-size: 2rem;
     }
   }
+
+  ${(props) =>
+    props.column &&
+    css`
+      h3 {
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+    `}
 `;
 
 export const BoxForm = styled.form`
@@ -67,15 +97,17 @@ export const BoxForm = styled.form`
   justify-content: space-between;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 3rem;
 
   @media ${device.tablet} {
     flex-direction: row;
   }
-
-  @media ${device.laptop} {
-    height: 5rem;
-  }
+  ${(props) =>
+    props.column &&
+    css`
+      flex-direction: column !important;
+      align-items: center;
+      gap: 2rem;
+    `}
 `;
 
 export const Boxes = styled.div`
@@ -84,6 +116,18 @@ export const Boxes = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+
+  ${(props) =>
+    props.column &&
+    css`
+      flex-direction: column;
+      height: auto;
+      input,
+      button {
+        width: 100%;
+        padding: 1rem;
+      }
+    `}
 
   input,
   button {
@@ -133,7 +177,11 @@ export const Button = styled.button`
     width: 80%;
   }
 
-  &:hover {
-    transform: scale(1.1);
-  }
+  ${(props) =>
+    props.column &&
+    css`
+      @media ${device.tablet} {
+        width: 100%;
+      }
+    `}
 `;

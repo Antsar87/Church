@@ -4,6 +4,7 @@ import watch from '../../images/Icon/Icon_Header/HORLOGE.png';
 //Components
 import { Button } from '../../utility/Button/Button';
 import Title from '../../utility/Title/Title';
+import Contact from '../Contact/Contact';
 import EnseignementBox from '../EnseignementBox/EnseignementBox';
 import EnseignementPageSocial from '../EnseignementPageSocial/EnseignementPageSocial';
 
@@ -90,14 +91,15 @@ const EnseignementPage = () => {
               <EnseignementBox {...item} box="secondary" key={Math.random()} />
             ))}
           </article>
-          <div className="Box__Theme">
+          <article className="Box__Theme">
             <Title paint={(props) => props.theme.blueDark}>{theme.title}</Title>
             {theme.themeInformation.map((item) => (
               <EnseignementBox {...item} box="secondary" key={Math.random()} />
             ))}
-          </div>
+          </article>
         </div>
       </div>
+      <Contact />
     </Styled.Box>
   );
 };

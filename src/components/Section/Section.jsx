@@ -9,8 +9,6 @@ import * as Styled from './Section.style';
 
 ///Data
 import {
-  ArrowLeft,
-  ArrowRight,
   InformationCarousel,
   InformationMessages,
 } from './SectionData';
@@ -19,9 +17,8 @@ const Section = () => {
   return (
     <Styled.Box id="home">
       <SectionCarousel
-        ArrowLeft={ArrowLeft}
-        ArrowRight={ArrowRight}
         InformationCarousel={InformationCarousel}
+        className="Carousel"
       />
       <Styled.Boxes>
         <SectionBoxes InformationMessages={InformationMessages} />

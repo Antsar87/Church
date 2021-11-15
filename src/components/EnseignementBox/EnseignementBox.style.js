@@ -83,6 +83,7 @@ export const MainBox = styled.div`
       }
 
       .boxImg {
+        flex: 1;
         img {
           object-fit: cover top;
           width: 100%;
@@ -96,6 +97,7 @@ export const MainBox = styled.div`
       }
 
       .boxContent {
+        flex: 1;
         display: flex;
         gap: 1rem;
         flex-direction: column;
