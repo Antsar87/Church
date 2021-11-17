@@ -3,12 +3,13 @@ import ReactPaginate from 'react-paginate';
 
 ///Components
 import NoticeBox from '../NoticeBox/NoticeBox';
+import VideoSecondary from '../VideoSecondary/VideoSecondary';
 
 function Pagination(props) {
   const [users] = useState(props.Data);
   const [pageNumber, setPageNumber] = useState(0);
 
-  const usersPerPage = 3;
+  const usersPerPage = props.perpage;
   const pagesVisited = pageNumber * usersPerPage;
 
   const displayUsers = users
@@ -19,7 +20,12 @@ function Pagination(props) {
           {props.page === 'predication' ? (
             <NoticeBox {...item} />
           ) : (
-            <div>hola</div>
+            <VideoSecondary
+              img={item.img}
+              title={item.title}
+              onclick={() => props.onclick(item.src)}
+              borderColor="none"
+            />
           )}
         </Fragment>
       );
@@ -35,8 +41,8 @@ function Pagination(props) {
     <div className={props.className}>
       {displayUsers}
       <ReactPaginate
-        previousLabel={'Previous'}
-        nextLabel={'Next'}
+        previousLabel={"<"}
+        nextLabel={'>'}
         pageCount={pageCount}
         onPageChange={changePage}
         containerClassName={'paginationBttns'}

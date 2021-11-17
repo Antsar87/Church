@@ -26,7 +26,7 @@ const Menu = () => {
           <Recherche className="input" />
           <Styled.BoxButtons>
             {ButtonsLinks.map(({ content, type, Icon, alt, link }, idx) => (
-              <Link to={`${link}`} key={idx}>
+              <Link to={link} key={idx}>
                 <Button type={type}>
                   {Icon && <img src={Icon} alt={alt} />}
                   {content}

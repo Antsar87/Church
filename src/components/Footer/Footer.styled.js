@@ -4,8 +4,10 @@ import { device } from '../../config/Responsive';
 export const Footer = styled.footer`
   background: black;
   padding: 2rem;
-  margin-top: 3rem;
   overflow: hidden;
+
+  margin-top: ${(props) =>
+    props.location.pathname === '/live' ? '0' : '3rem'};
 
   @media ${device.laptop} {
     padding: 0 7rem;
@@ -108,15 +110,17 @@ export const Content = styled.div`
   }
 `;
 
-export const Live = styled.a`
+export const Live = styled.button`
   background: ${(props) => props.theme.white};
   color: ${(props) => props.theme.blueDark};
   padding: 0.25rem;
   text-decoration: none;
   font-size: 1.5rem;
   display: inline-block;
+  text-align: start;
   width: 100%;
   margin-top: 1.5rem;
+  border: none;
 
   img {
     width: 2.3rem;

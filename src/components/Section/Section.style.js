@@ -16,7 +16,9 @@ export const Box = styled.section`
     flex-direction: row;
   }
 
-  
+  .carousel {
+    height: 100%;
+  }
 `;
 
 export const Boxes = styled.div`

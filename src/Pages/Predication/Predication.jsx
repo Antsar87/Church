@@ -28,7 +28,7 @@ const Predication = () => {
           className="Carousel"
         />
         <Contact column className="form"/>
-        <Pagination Data={BoxInformation} page="predication" className="pag"/>
+        <Pagination Data={BoxInformation} page="predication" className="pag" perpage={4}/>
 
         <article className="articles">
           <Title paint={(props) => props.theme.blueDark}>

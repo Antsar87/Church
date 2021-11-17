@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fragment } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 //Components
 import Recherche from '../../utility/Recherche/Recherche';
@@ -12,8 +13,9 @@ import * as Styled from './Footer.styled';
 import { ButtonInformation, Contact, Main, Menu } from './FooterData';
 
 const Footer = () => {
+  const location = useLocation()
   return (
-    <Styled.Footer>
+    <Styled.Footer location={location}>
       <Styled.Flex>
         <Styled.Box className="responsive_Center">
           <Styled.Logo src={Main.Logo} />
@@ -51,10 +53,12 @@ const Footer = () => {
         </div>
         <Styled.Box className="last">
           <Recherche paint={(props) => props.theme.blueDark} />
-          <Styled.Live href={ButtonInformation.Link}>
-            <img src={ButtonInformation.IconLive} alt="Live" />
-            {ButtonInformation.Content}
-          </Styled.Live>
+          <Link to="/live">
+            <Styled.Live href={ButtonInformation.Link}>
+              <img src={ButtonInformation.IconLive} alt="Live" />
+              {ButtonInformation.Content}
+            </Styled.Live>
+          </Link>
         </Styled.Box>
       </Styled.Flex>
     </Styled.Footer>

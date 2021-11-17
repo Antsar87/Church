@@ -42,7 +42,7 @@ const Videos = () => {
           slidesToScroll={1}
           paint="yellow"
           responsive={responsive}
-          link="videos"
+          link="live"
         >
           {Information.map((item, idx) => (
             <Styled.Box key={idx}>
@@ -51,6 +51,7 @@ const Videos = () => {
             </Styled.Box>
           ))}
         </MainCarousel>
+        
       </Styled.VideoBox>
     </Styled.Video>
   );
